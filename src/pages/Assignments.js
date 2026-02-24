@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { courses } from "./Courses"; // ✅ Reuse the same course list
+//import { courses } from "./Courses"; // ✅ Reuse the same course list
 import "./Assignments.css";
 
 function Assignments() {
