@@ -1,0 +1,166 @@
+.projects-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.add-btn {
+  display: block;
+  margin: 0 auto 25px;
+  padding: 10px 24px;
+  background: #ffde03;
+  color: black;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 18px;
+  color: #333;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.category {
+  background: #0072ff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.desc {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.meta {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00e676, #00c853);
+}
+
+.status {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.edit-btn {
+  background: #2979ff;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  background: #ff3b30;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  width: 420px;
+  color: #333;
+  animation: fadeZoom 0.3s;
+}
+
+.modal-box input,
+.modal-box textarea,
+.modal-box select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.modal-actions {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.save-btn {
+  background: #0072ff;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+.cancel-btn {
+  background: gray;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+@keyframes fadeZoom {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,61 @@
+.add-submission-container {
+  width: 100%;          /* Responsive width */
+  max-width: 1500px;   /* Increased from 800px */
+  margin: 50px auto;
+  background: white;
+  padding: 80px;       /* Slightly more padding */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.submission-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.file-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.file-input {
+  border: 2px dashed #ccc;
+  padding: 25px;
+  width: 100%;         /* Expands to container width */
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;  /* Keep placeholder text centered */
+}
+
+.file-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.submission-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;          /* More spacing between buttons */
+  justify-content: center;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  background: #d9534f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}

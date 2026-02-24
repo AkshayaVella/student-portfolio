@@ -1,0 +1,103 @@
+/* Courses.css */
+
+.courses-container {
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.courses-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.courses-header p {
+  font-size: 16px;
+  color: #636e72;
+}
+
+.back-btn {
+  background: #0984e3;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #74b9ff;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.course-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #2d3436;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #636e72;
+  margin-bottom: 15px;
+}
+
+.enroll-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0984e3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.enroll-btn:hover {
+  background: #74b9ff;
+}
+
+.search-bar {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+}

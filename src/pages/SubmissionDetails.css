@@ -1,0 +1,104 @@
+.submission-page {
+  width: 95%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.submission-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.submission-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #0073e6;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.submission-actions-top {
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the right */
+  gap: 60px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.edit-btn,
+.remove-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.edit-btn {
+  background: #007bff; /* Updated to modern blue */
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.remove-btn {
+  background: #dc3545; /* Updated to modern red */
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #a71d2a;
+}
+
+.status-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.status-card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.status-grid p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.file-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.file-item {
+  padding: 8px 12px;
+  background: #eef4ff;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.no-file {
+  color: #999;
+  font-style: italic;
+}

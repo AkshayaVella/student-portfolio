@@ -1,0 +1,140 @@
+.tasks-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  border-radius: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.add-task-btn {
+  display: block;
+  margin: 10px auto 30px;
+  padding: 12px 25px;
+  background: #ffe600;
+  color: black;
+  border-radius: 14px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tasks-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.task-card {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  color: #333;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-10px);
+}
+
+.desc {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.meta {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.status {
+  font-weight: bold;
+  color: #ff5e62;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+.delete-btn {
+  background: #ff3b3b;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  width: 400px;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  animation: fadeIn 0.3s;
+}
+
+.modal-box input,
+.modal-box textarea,
+.modal-box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.modal-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn {
+  padding: 10px 20px;
+  background: #ff5e62;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.cancel-btn {
+  padding: 10px 20px;
+  background: #ccc;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}

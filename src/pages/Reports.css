@@ -1,0 +1,118 @@
+.reports-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 18px;
+  color: #fff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Sections */
+.report-section {
+  margin-bottom: 50px;
+}
+
+.report-section h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+/* STUDENT PERFORMANCE CIRCLES */
+.chart-row {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  width: 180px;
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.circle {
+  width: 100%;
+  height: 120px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.inner-circle {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+/* COURSE BAR CHART */
+.bar-chart {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.bar-card {
+  text-align: center;
+}
+
+.bar {
+  width: 60px;
+  border-radius: 12px;
+  background: #ffdd00;
+  transition: 0.3s;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* TASK PROGRESS */
+.task-chart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.task-card {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 14px;
+  width: 260px;
+  backdrop-filter: blur(5px);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 999px;
+  margin: 12px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #00ff99;
+  border-radius: 999px;
+  transition: 0.4s;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,143 @@
+/* 🎨 Container Base */
+.settings-container {
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* 🌞 Light Theme */
+.light-theme {
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  color: #222;
+}
+
+/* 🌙 Dark Theme */
+.dark-theme {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+}
+
+/* Title & Subtitle */
+.settings-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ff9800;
+}
+
+.settings-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Settings Layout */
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.settings-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.settings-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Buttons */
+.theme-options button,
+.btn {
+  margin: 0.3rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.theme-options button.active {
+  background: #ff9800;
+  color: white;
+}
+
+.theme-options button {
+  background: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+.theme-options button:hover,
+.btn:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.btn {
+  background: #4caf50;
+  color: white;
+}
+
+.btn.danger {
+  background: #e53935;
+  color: white;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

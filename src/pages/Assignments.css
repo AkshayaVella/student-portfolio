@@ -1,0 +1,70 @@
+.assignments-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.assignments-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  padding: 8px;
+  width: 60%;
+  border-radius: 6px;
+  border: none;
+}
+
+.assignments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.assignment-card {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-card h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.assignment-card .code {
+  font-size: 14px;
+  color: #777;
+}
+
+.submit-btn {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.status-box {
+  margin-top: 15px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+}

@@ -1,0 +1,24 @@
+.timeline-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #4568dc, #b06ab3);
+  border-radius: 20px;
+  animation: fadeIn 0.4s ease-in-out;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.chart-box {
+  width: 80%;
+  margin: auto;
+  background: rgba(255,255,255,0.15);
+  padding: 30px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}

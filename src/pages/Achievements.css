@@ -1,0 +1,232 @@
+/* 🎨 Container */
+.achievements-container {
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ✨ Title & Subtitle */
+.achievements-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffeb3b;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.achievements-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e0f7fa;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+/* 🔍 Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Year Filter */
+.year-filter {
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.year-filter:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Toggle Buttons */
+.toggle-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.toggle-buttons .active {
+  background: #ff9800;
+  color: #fff;
+}
+
+/* 📦 Grid Layout */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Cards */
+.achievement-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 0.8s ease;
+}
+
+.achievement-card:hover {
+  transform: scale(1.07);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.medal {
+  font-size: 2rem;
+}
+
+.card-header {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: #ffeb3b;
+}
+
+.card-desc {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-date {
+  font-size: 0.9rem;
+  color: #c8e6c9;
+  font-style: italic;
+}
+
+/* 📅 Timeline */
+.timeline {
+  margin-top: 2rem;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid rgba(255, 255, 255, 0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+  animation: slideIn 0.8s ease;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.2rem;
+  top: 0;
+  font-size: 1.5rem;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: #cfd8dc;
+  font-style: italic;
+}
+
+/* ❌ No Results */
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffcccc;
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 🔥 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

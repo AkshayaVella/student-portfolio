@@ -1,0 +1,81 @@
+.progress-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb; /* soft light background */
+  border-radius: 12px;
+}
+
+/* ---------- HEADER ---------- */
+.progress-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.progress-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1e293b; /* dark navy for good contrast */
+}
+
+.subtitle {
+  color: #475569;
+  font-size: 16px;
+}
+
+/* ---------- SUMMARY CARD ---------- */
+.progress-summary {
+  background: linear-gradient(135deg, #2563eb, #60a5fa); /* blue gradient */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.progress-summary .highlight {
+  font-weight: bold;
+  font-size: 20px;
+  color: #facc15; /* bright yellow */
+}
+
+/* ---------- CHARTS ---------- */
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.chart-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.chart-card h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #334155; /* slate gray */
+}
+
+/* ---------- MOTIVATION BOX ---------- */
+.motivation-box {
+  background: #e0f2fe; /* soft light blue */
+  border-left: 6px solid #0284c7; /* blue accent */
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  color: #1e293b;
+}

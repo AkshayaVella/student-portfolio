@@ -1,0 +1,128 @@
+/* MAIN WRAPPER */
+.settings-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  color: white;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* PAGE TITLE */
+.title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* SETTINGS CARD */
+.settings-card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  animation: fadeSlide 0.5s ease;
+}
+
+/* CARD TITLE */
+.settings-card h2 {
+  margin-bottom: 15px;
+}
+
+/* FORM INPUTS */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+}
+
+/* THEME RADIO BUTTONS */
+.theme-options label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* TOGGLE SWITCH */
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  display: inline-block;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #888;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #00e676;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeSlide {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
